@@ -85,9 +85,10 @@ Ask these as a short grouped follow-up (not one by one). Skip any that were alre
 
 ## Contact Structure
 - One Markdown file per person: `maria-garcia.md`
-- Sections: basics, relationship, personal details, interaction history, notes, private notes
-- **Private Notes 🔒** section: for sensitive info (debts, conflicts, things not to share). Always separate from general Notes.
-- Tags for grouping: #family #work #friend #neighbor #investor #advisor
+- Sections: basics, relationship, personal details, notes or private notes (not both unless needed)
+- Use **Notes** for general context worth remembering
+- Use **Private Notes 🔒** for sensitive info (debts, conflicts, things not to share) — always separate
+- No interaction history section — it goes stale fast. Capture what matters as a note instead.
 - Keep it human-readable — this is about relationships, not data entry
 
 ## Key Fields To Capture
@@ -100,11 +101,13 @@ Ask these as a short grouped follow-up (not one by one). Skip any that were alre
 - Birthday, anniversary, important dates → Notes
 - Family members, kids, sensitive info → Private Notes 🔒
 
-## Interaction Logging
-- Date + brief note: "2024-03-15: Lunch, discussed her new job"
-- Don't force structure — freeform is fine
-- Recent interactions at top — most relevant for context
-- Link to related contacts if group interaction
+## Logging Interactions
+Don't create an interaction history. Instead, update the person's Notes with whatever is worth remembering long-term. If it's not worth keeping, don't write it down.
+
+Examples:
+- "Going part-time at Goodnotes from mid-April, focusing on AI-native design systems" → Notes
+- "Owes Ilya money, uncomfortable topic" → Private Notes 🔒
+- "We had coffee" → don't bother
 
 ## Progressive Enhancement
 - Start by creating contacts as they come up naturally
