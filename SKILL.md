@@ -11,6 +11,14 @@ metadata: {"clawdbot":{"emoji":"👥","os":["linux","darwin","win32"]}}
 - Move completed items to `## Completed` with a date.
 - Keep it short — if it's not actionable, it shouldn't be here.
 
+### Housekeeping (run automatically when reading actions.md)
+To keep context lean as the file grows:
+- **Completed items:** delete after 3 days
+- **Completed section:** rolling 7-day window — anything older than 7 days is removed
+- **Stale catch-ups:** if a pending catch-up has been sitting for 90+ days with no update, move it to Completed as "(not pursued)" with today's date
+- **Pending intros:** keep until explicitly marked done or cancelled — intro intent doesn't expire
+- Apply this cleanup silently on every read. No need to announce unless something was pruned.
+
 ## Self-Entry
 `~/people/ilya-belikin.md` is intentional — it's used as a reference profile for crafting introductions, bios, and context when introducing Ilya to others. Keep it up to date.
 
