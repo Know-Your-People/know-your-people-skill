@@ -14,7 +14,7 @@ The owner's own contact file (slug derived from `.peopleconfig.yml` `owner` fiel
 
 ## Actions File
 
-`~/.clawbot/worspace/people/actions.md` — the pending actions queue. Check this during morning briefings.
+`~/.clawbot/workspace/people/actions.md` — the pending actions queue. Check this during morning briefings.
 
 - **Catch-ups:** people `owner` wants to reconnect with. Add when he says "we should catch up with David" or similar.
 - **Introductions:** intros to facilitate. Always include a pre-generated draft intro message (using ilya-belikin.md + both contact files for context). Format: `Person A → Person B — reason` followed by the intro text as a plain indented paragraph (no "Draft:" label, no quotes, no formatting).
@@ -61,7 +61,7 @@ If the user has joined a Peeps Enclave (peepsapp.ai), the enclave allows federat
 
 ## When User Mentions Someone
 
-- "Had coffee with Maria" → ask if any updates from her, update if anythign important
+- "Had coffee with Maria" → ask if any updates from her, update if anything important
 - "John's daughter is Sofia" → add to personal details
 - "Sarah loves hiking" → add to interests/notes
 
@@ -142,7 +142,7 @@ Examples:
 ## Folder Structure
 
 ```
-~/people/
+~/.clawbot/workspace/people/
 ├── maria-garcia.md
 ├── john-smith.md
 └── deceased/         # for people who have passed
@@ -165,10 +165,10 @@ grep -i "keyword" ~/.clawbot/workspace/people/*.md
 grep -ril "hsbc" ~/.clawbot/workspace/people/
 
 # Find open-to-intro contacts
-grep -rl "Intor willingness.*Open" ~/.clawbot/workspace/people/
+grep -rl "Intro willingness.*Open" ~/.clawbot/workspace/people/
 
 # Full text search with filename
-grep -iH "keyword" ~/people/*.md
+grep -iH "keyword" ~/.clawbot/workspace/people/*.md
 ```
 
 For fuzzy/approximate matching, use `grep -i` (case-insensitive) as the first pass.
