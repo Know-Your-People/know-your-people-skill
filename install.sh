@@ -61,11 +61,46 @@ if [ ! -f "$CONFIG_FILE" ]; then
   read -r -p "  Your full name (e.g. Jane Smith): " OWNER_NAME
   # Derive slug: lowercase, replace spaces with hyphens
   OWNER_SLUG=$(echo "$OWNER_NAME" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr -cd 'a-z0-9-')
-  cat > "$CONFIG_FILE" << EOF
-owner: ${OWNER_SLUG}
-dispatch-api: api.peepsapp.ai
-enclaves: [key1, key2, key3]
-EOF
+
+  ENCLAVE_KEYS=()
+  echo ""
+  echo "  Enclave keys (optional — Peeps Dispatch / api.peepsap.ai)."
+  read -r -p "  Enclave key, or press Enter to skip: " FIRST_KEY
+  if [ -n "$FIRST_KEY" ]; then
+    KEY="$FIRST_KEY"
+    while true; do
+      ENCLAVE_KEYS+=("$KEY")
+      echo ""
+      echo "  1) Add another key"
+      echo "  2) Finish"
+      read -r -p "  Choice [1-2, default 2]: " ENCLAVE_MENU
+      ENCLAVE_MENU=${ENCLAVE_MENU:-2}
+      if [ "$ENCLAVE_MENU" = "1" ]; then
+        read -r -p "  Enclave key: " KEY
+        if [ -z "$KEY" ]; then
+          echo -e "${YELLOW}  Empty key — finishing.${NC}"
+          break
+        fi
+      else
+        break
+      fi
+    done
+  fi
+
+  {
+    echo "owner: ${OWNER_SLUG}"
+    if [ ${#ENCLAVE_KEYS[@]} -eq 0 ]; then
+      echo "enclaves: []"
+    else
+      echo "enclaves:"
+      for KEY in "${ENCLAVE_KEYS[@]}"; do
+        ESC_KEY=$(printf '%s' "$KEY" | sed "s/'/''/g")
+        echo "  - '${ESC_KEY}'"
+      done
+    fi
+    echo "endpoint: null"
+  } > "$CONFIG_FILE"
+
   echo -e "${GREEN}✓ Created ${CONFIG_FILE} (owner: ${OWNER_SLUG})${NC}"
   echo -e "${YELLOW}  Remember to create your own contact file: ${PEEPS_DIR}/${OWNER_SLUG}.md${NC}"
 else
