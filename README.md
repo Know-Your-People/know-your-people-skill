@@ -16,7 +16,7 @@ No CRM. No app. No feed. Just files and your AI agent.
 - **Drafts intros** — "connect Peter and Shaurya, they should meet"
 
 ```
-~/people/
+~/.openclaw/peeps/
   leo-lau.md
   peter-boeckel.md
   shaurya-srivastava.md
