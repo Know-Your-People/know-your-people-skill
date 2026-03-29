@@ -1,4 +1,5 @@
 .clawhub/
+.openclaw/
 _meta.json
 
 # Local data — never commit to skill repo
@@ -7,5 +8,6 @@ _meta.json
 data/
 peeps/
 contacts/
+people/
 *.db
 *.sqlite
