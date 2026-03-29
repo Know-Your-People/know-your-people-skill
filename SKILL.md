@@ -195,9 +195,6 @@ All contact files live directly in `~/.openclaw/workspace/peeps/`. Move people w
 Use `grep` for fast fuzzy scanning. Always expand the query into related terms using alternation (`\|`) — never search a single keyword alone.
 
 ```bash
-# Find matching contacts (returns filenames)
-grep -ril "keyword\|synonym\|related" ~/.openclaw/workspace/peeps/
-
 # Find matching lines with context
 grep -iH "keyword\|synonym" ~/.openclaw/workspace/peeps/*.md
 
@@ -213,7 +210,7 @@ grep -rl "Intro willingness.*Open" ~/.openclaw/workspace/peeps/
 - "marketing" → `marketing\|growth\|brand\|content\|seo\|ads`
 - "AI" → `ai\|machine.learning\|llm\|ml\|data.science\|nlp`
 
-When the user asks "who do I know in X", construct a multi-term grep from the domain. Prefer `-ril` for discovery, `-iH` when you need to see what's actually in the files.
+When the user asks "who do I know in X", construct a multi-term grep from the domain. Use `-iH` to see what's actually in the files.
 
 **After grepping, always read the full contact file(s) before answering.** Never base your answer solely on grep output — the matched snippet is a signal, not the full picture. Read the complete file to get accurate context on relationship, acumen, and any notes before surfacing someone to the user.
 
