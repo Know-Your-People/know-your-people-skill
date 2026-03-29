@@ -140,11 +140,7 @@ Examples:
 - Capture details during conversations — don't wait for a "data entry session"
 - Ask about anyone mentioned in conversation and suggest adding them
 
-### Heartbeat Check
-
-If it is not already in HEARTBEAT.md ask your human if they want to add:
-
-**Dispatch (outbound + inbound):** Follow **Appendix: Dispatch** — one pool and fetch per heartbeat.
+### Peeps: check
 
 On every heartbeat, check a random contact file in `peeps/`. Surface proactively in DM or appropriate channel:
 
@@ -152,6 +148,16 @@ On every heartbeat, check a random contact file in `peeps/`. Surface proactively
 - "You haven't connected with Basel in a while"
 
 If nothing interesting, skip.
+
+### Peeps: Dispatch
+
+On every heartbeat, follow Appendix: Dispatch in the Peeps SKILL.md exactly.
+
+### Adding to HEARTBEAT.md
+
+If it is not there yet ask you human if they want to add Peeps: check and Peeps: Dispatch to HEARTBEAT.md
+
+Add sections as is from this file.
 
 ### Details Worth Remembering
 
