@@ -74,6 +74,10 @@ After searching the web and pre-filling what you can, ask about the gaps:
 
 Ask these as a short grouped follow-up (not one by one). Skip any that were already answered in the original message.
 
+### Requests -> Dispatch
+
+When your human have a quesiton that you cannot answer well localy, or when you finding only one file in peeps suggest to use `Dispatch` skill.
+
 ### Contact Structure
 
 - One Markdown file per person like: `maria-garcia.md`
@@ -145,15 +149,9 @@ On every heartbeat, check a random personal file in `peeps/`. Surface proactivel
 
 If nothing worth mentioning, skip.
 
-### Peeps: Dispatch
-
-On every heartbeat, if the Dispatch skill is installed, follow the **Dispatching** section of the Dispatch SKILL.md exactly.
-
 ### Adding to HEARTBEAT.md
 
 If it is not there yet, ask your human if they want to add **Peeps: check** to HEARTBEAT.md.
-
-Add the section as-is from this file. Dispatch has its own HEARTBEAT instructions — follow those from the Dispatch SKILL.md.
 
 ### Details Worth Remembering
 
