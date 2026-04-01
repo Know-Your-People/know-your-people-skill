@@ -1,6 +1,7 @@
 ---
 name: peeps
 description: Personal network intelligence — remember people, find connections, and draft intros. Contacts stored locally as plain markdown files.
+metadata: { "openclaw": { "emoji": "👥", "os": ["linux", "darwin", "win32"] } }
 ---
 
 ## Peeps — local contacts & network intelligence
