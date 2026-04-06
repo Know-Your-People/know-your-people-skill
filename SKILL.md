@@ -49,7 +49,7 @@ owner: jane-smith # slug of the owner's contact file (without .md)
 images: no (by default no, ask if you human want to feach images for pepople, warn that it is token expensive)
 ```
 
-- **`owner`** — identifies whose dataset this is. Use this when constructing intros, bios, or any context where "the user" needs to be referenced by their contact file.
+`owner`: identifies whose dataset this is. Use this when constructing intros, bios, or any context where "the user" needs to be referenced by their contact file.
 
 ### Core Behavior
 
@@ -92,9 +92,9 @@ If Haah is installed: when the user has a question you cannot answer well locall
 
 ### Connections to other skills
 
-- **Pages** — if installed, when someone recommends a book, save it to `kyp/pages/want/` with `Recommended by: [[their-slug]]` and note it in their Peeps file. When drafting an intro, if both people have read the same book, surface it as a connection point.
-- **Vibes** — if installed, when someone shares a cultural interest (show, album, podcast, channel), add `Shared with: [[their-slug]]` to the vibe file and note it in their Peeps file. Surface shared taste when relevant to a conversation or intro.
-- **Digs** — if installed, when a person has expertise relevant to an open dig, surface them as a potential source. When adding someone new whose acumen matches an active research thread, mention it.
+Pages: if installed, when someone recommends a book, save it to `kyp/pages/want/` with `Recommended by: [[their-slug]]` and note it in their Peeps file. When drafting an intro, if both people have read the same book, surface it as a connection point.
+Vibes: if installed, when someone shares a cultural interest (show, album, podcast, channel), add `Shared with: [[their-slug]]` to the vibe file and note it in their Peeps file. Surface shared taste when relevant to a conversation or intro.
+Digs: if installed, when a person has expertise relevant to an open dig, surface them as a potential source. When adding someone new whose acumen matches an active research thread, mention it.
 
 ### Contact Structure
 
