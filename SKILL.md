@@ -82,7 +82,7 @@ After searching the web and pre-filling what you can, ask about the gaps:
 4. **How you know them** — if not already provided
 5. **Interests** — hobbies, sports, lifestyle?
 
-If in `kyp/pages/peepsconfig.yml` images set to yes find a headhsot of a person and ad it to `../assets/` use person name for a slug, write it down in **Images:** feild.
+If in `kyp/pages/peepsconfig.yml` images set to yes find a headhsot of a person and ad it to `../assets/` use person name for a slug, write it down in **Image:** feild.
 
 Ask these as a short grouped follow-up (not one by one). Skip any that were already answered in the original message.
 

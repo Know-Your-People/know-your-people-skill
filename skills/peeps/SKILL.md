@@ -1,5 +1,4 @@
 ---
-
 name: peeps
 description: Personal network intelligence — remember people, find connections, and draft intros. Contacts stored locally as plain markdown files.
 metadata:
@@ -7,8 +6,7 @@ metadata:
     emoji: "👥"
     os: ["linux", "darwin", "win32"]
   hermes:
-tags: ["people", "network", "contacts"]
-
+    tags: ["people", "network", "contacts"]
 ---
 
 ## 👥 Peeps — local contacts & network intelligence
@@ -51,7 +49,7 @@ owner: jane-smith # slug of the owner's contact file (without .md)
 images: no (by default no, ask if you human want to feach images for pepople, warn that it is token expensive)
 ```
 
-- `**owner**` — identifies whose dataset this is. Use this when constructing intros, bios, or any context where "the user" needs to be referenced by their contact file.
+- **`owner`** — identifies whose dataset this is. Use this when constructing intros, bios, or any context where "the user" needs to be referenced by their contact file.
 
 ### Core Behavior
 
@@ -84,7 +82,7 @@ After searching the web and pre-filling what you can, ask about the gaps:
 4. **How you know them** — if not already provided
 5. **Interests** — hobbies, sports, lifestyle?
 
-If in `kyp/pages/peepsconfig.yml` images set to yes find a headhsot of a person and ad it to `../assets/` use person name for a slug, write it down in **Images:** feild.
+If in `kyp/pages/peepsconfig.yml` images set to yes find a headhsot of a person and ad it to `../assets/` use person name for a slug, write it down in **Image:** feild.
 
 Ask these as a short grouped follow-up (not one by one). Skip any that were already answered in the original message.
 
