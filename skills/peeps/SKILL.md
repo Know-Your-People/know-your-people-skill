@@ -276,20 +276,14 @@ When creating an org file prompted by a person, immediately add that person to t
 
 Use `grep` for fast fuzzy scanning. Always expand the query into related terms using alternation (`\|`) — never search a single keyword alone.
 
+**Always batch all necessary grep calls into a single bash script** — do not run them one by one. Combine everything you need upfront and execute once.
+
 ```bash
-# Find matching lines with context
+# Example: single script combining all relevant lookups
 grep -iH "keyword\|synonym" kyp/peeps/*.md
-
-# Find contacts with a specific interest tag
 grep -rl "#hiking" kyp/peeps/
-
-# Find everyone connected to a given org
 grep -l "\[\[google\]\]" kyp/peeps/*.md kyp/peeps/orgs/*.md
-
-# Find all people at a given org (via Orgs: field)
 grep -rl "Orgs:.*\[\[stripe\]\]" kyp/peeps/
-
-# Search org files for culture or industry keywords
 grep -iH "remote\|async\|flat" kyp/peeps/orgs/*.md
 ```
 
